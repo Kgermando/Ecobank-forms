@@ -1,0 +1,1 @@
+web: gunicorn Ecobank.wsgi --log-file -

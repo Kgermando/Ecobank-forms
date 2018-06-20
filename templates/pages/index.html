@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<form action="{% url 'add' %}" method="POST" role="form">
+		{% csrf_token %}
+	<div class="">
+		<div class="">
+			{{ form.as_p}}
+		</div>
+		<div class="text-center">
+		<button type="submit" class="btn btn-success">Valider</button>
+		</div>
+	</div>
+</form>
+{% endblock %}
